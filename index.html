@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>
+                   <h1>REGISTRATION</h1>
+                </legend>
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" class="fname" minlength="1" maxlength="15" required>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" class="lname" required>
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" id="others" name="gender">
+                    <label for="others">Others</label>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob" placeholder="dd  / mm / yyyy" required>
+                </div>
+                <div>
+                    <label for="phone_number">Mobile Number:</label>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="91-98765-43210" required>
+                </div>
+                <div>
+                    <label for="email-id">Email:</label>
+                    <input type="email" name="email-id" id="email-id" required>
+                </div>
+                <div>
+                    <label for="address">Address:</label><br>
+                    <textarea name="address" id="address" cols="50" rows="7" required></textarea>
+                </div>
+                <div>
+                    <label for="aadhar-id">Aadhaar:</label>
+                    <input type="number" name="aadhar-id" id="aadhar-id" placeholder="8765-4321-8765-4321" required>
+                </div>
+                <div>
+                    <label for="course">Course:</label>
+                    <input type="text" name="course" id="course" placeholder="Select" required>
+                </div>
+                <div>
+                    <label for="qualification">Qualification:</label>
+                    <select>
+                        <option value="ug">UG</option>
+                        <option value="pg">PG</option>
+                        <option value="iit">IIT</option>
+                    </select>
+
+                    <label for="degree">Degree & Dept:</label>
+                    <input type="text" id="course-degree" name="degree" placeholder="BE CSE" required>
+                </div>
+                <div>
+                    <label for="file">Upload Resume:</label>
+                    <input type="file" name="file" id="upload-file" required>
+                </div>
+                <div>
+                    <input type="checkbox" name="check1" id="checkbox-val" required>
+                    <label for="check1">I accept all teams & conditions.</label><br>
+                    <input type="checkbox" name="check2" id="checkbox-value" required>
+                    <label for="check2">I hereby declare that all statements made in this application are true.</label>
+                </div>
+                <div class="btn">
+                    <button>Submit</button><button>Reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
